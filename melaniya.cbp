@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="melaniya" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/melaniya" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/melaniya" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add directory="../../../../Downloads/gtk/include" />
+			<Add directory="../../../../Downloads/gtk/include/harfbuzz" />
+			<Add directory="../../../../Downloads/gtk/include/glib-2.0" />
+			<Add directory="../../../../Downloads/gtk/lib/glib-2.0/include" />
+			<Add directory="../../../../Downloads/gtk/include/gtk-4.0" />
+			<Add directory="../../../../Downloads/gtk/include/pango-1.0" />
+			<Add directory="../../../../Downloads/gtk/include/cairo" />
+			<Add directory="../../../../Downloads/gtk/include/gdk-pixbuf-2.0" />
+		</Compiler>
+		<Linker>
+			<Add library="../../../../Downloads/gtk/lib/gtk-4.lib" />
+			<Add library="../../../../Downloads/gtk/lib/glib-2.0.lib" />
+			<Add library="../../../../Downloads/gtk/lib/gobject-2.0.lib" />
+			<Add library="../../../../Downloads/gtk/lib/pango-1.0.lib" />
+			<Add library="../../../../Downloads/gtk/lib/cairo.lib" />
+			<Add library="../../../../Downloads/gtk/lib/gdk_pixbuf-2.0.lib" />
+			<Add library="../../../../Downloads/gtk/lib/harfbuzz.lib" />
+			<Add library="../../../../Downloads/gtk/lib/graphene-1.0.lib" />
+			<Add library="../../../../Downloads/gtk/lib/gio-2.0.lib" />
+			<Add library="../../../../Downloads/gtk/lib/pangocairo-1.0.lib" />
+			<Add library="../../../../Downloads/gtk/lib/cairo-gobject.lib" />
+			<Add library="../../../../Downloads/gtk/lib/gmodule-2.0.lib" />
+			<Add library="../../../../Downloads/gtk/lib/intl.lib" />
+			<Add directory="../../../../Downloads/gtk/lib" />
+		</Linker>
+		<Unit filename="callbacks.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="callbacks.h" />
+		<Unit filename="db.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="db.h" />
+		<Unit filename="main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="salt.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="salt.h" />
+		<Unit filename="sqlite3.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ui.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ui.h" />
+		<Extensions />
+	</Project>
+</CodeBlocks_project_file>
